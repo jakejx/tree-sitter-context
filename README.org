@@ -1,0 +1,16 @@
+# Tree-sitter context
+This minor mode attempts to replicate the functionality provided by [[https://github.com/wellle/context.vim][Vim plugin context]]. The mode displays the context of the cursor position (for e.g. the enclosing if statement, loop or method declaration) in a sticky header . It uses [[https://emacs-tree-sitter.github.io][tree sitter]] for identifying nodes that should are "significant".
+
+NOTE: this package is in alpha status and probably causes alot of glitches - use at your own risk.
+
+# Installation
+Currently, the only way to install this package is using straight.el or cloning the repo directly. (My first time creating a package so I will need to improve on this area).
+
+# Supported languages
+Theoretically, all languages support by tree-sitter should also be supported. But determining which nodes are "significant" needs to be identified per language. PRs welcome!
+
+- [X] Rust
+- [X] Go
+- [ ] Typescript
+- [ ] Javascript
+- [ ] Java
